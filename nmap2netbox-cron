@@ -1,0 +1,1 @@
+* 3 * * * /usr/bin/nmap -T4 -F $SCAN_NET -oX scan; /usr/local/bin/python3 /app/parser.py

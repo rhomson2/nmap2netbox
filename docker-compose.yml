@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  nmap2netbox:
+    build: .
+    environment:
+      - NETBOX_ADDRESS=http://192.168.13.71:8000
+      - NETBOX_TOKEN=0123456789abcdef0123456789abcdef01234567
+      - SCAN_NET=192.168.12.0/23
